@@ -3,7 +3,7 @@
 
     <groupId>br.trindade</groupId>
     <artifactId>maventest</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>maventest</name>
@@ -17,7 +17,7 @@
         <connection>scm:git:ssh://github.com/maikotrindade/mvn-release-plugin-test.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/maikotrindade/mvn-release-plugin-test.git</developerConnection>
         <url>https://github.com/maikotrindade/mvn-release-plugin-test</url>
-        <tag>v1.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <dependencies>
