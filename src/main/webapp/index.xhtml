@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>Maven Release Plugin</title>
+            </f:facet>
+        </h:head>
+        <h:body>
+            <h2 style="margin-top:0">Maven Release Plugin</h2>
+            <p:panel header="Goals">
+                <p:accordionPanel multiple="true">
+                    <p:tab title="mvn release:clean">
+                        <h:panelGrid columns="2" cellpadding="10">
+                            <h:outputText
+                                value="Clean up after a release preparation. This is done automatically after a successful 
+                                release:perform, so is best served for cleaning up a failed or abandoned release, or a dry run. 
+                                Note that only the working copy is cleaned up, no previous steps are rolled back. 
+                                For more info see http://maven.apache.org/plugins/maven-release-plugin/examples/clean-release.html." />
+                        </h:panelGrid>
+                    </p:tab>
+                    <p:tab title="mvn release:prepare">
+                        <h:panelGrid columns="2" cellpadding="10">
+                            <h:outputText value="Prepare for a release in SCM. Steps through several phases to ensure the POM is ready to be 
+                                          released and then prepares SCM to eventually contain a tagged version of the release and a record in the local 
+                                          copy of the parameters used. This can be followed by a call to release:perform. 
+                                          For more info see http://maven.apache.org/plugins/maven-release-plugin/examples/prepare-release.html." />
+                        </h:panelGrid>
+                    </p:tab>
+                    <p:tab title="mvn release:perform">
+                        <h:panelGrid columns="2" cellpadding="10">
+                            <h:outputText value="Perform a release from SCM, either from a specified tag, or the tag representing the previous 
+                                          release in the working copy created by release:prepare. 
+                                          For more info see http://maven.apache.org/plugins/maven-release-plugin/examples/perform-release.html." />
+                        </h:panelGrid>
+                    </p:tab>
+                </p:accordionPanel>
+            </p:panel>
+        </h:body>
+    </f:view>
+</html>
+
