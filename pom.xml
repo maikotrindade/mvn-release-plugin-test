@@ -7,7 +7,8 @@
     <packaging>war</packaging>
 
     <name>mvn-test</name>
-
+    <description>Just a usage test of Maven Release Plugin</description>
+    <inceptionYear>2014</inceptionYear>
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,19 +20,6 @@
         <developerConnection>scm:git:ssh://git@github.com/maikotrindade/mvn-release-plugin-test.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
-
-    <distributionManagement>
-        <repository>
-            <id>internal.repo</id>
-            <name>Temporary Staging Repository</name>
-            <url>file://${project.build.directory}/mvn-repo</url>
-        </repository>
-        <snapshotRepository>
-            <id>releases</id>
-            <name>Internal Repo</name>
-            <url>file://${project.build.directory}/mvn-repo</url>
-        </snapshotRepository>
-    </distributionManagement>
 
     <dependencies>
         <dependency>
