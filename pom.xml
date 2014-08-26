@@ -18,7 +18,7 @@
     <scm>
         <connection>scm:git:ssh://github.com/maikotrindade/mvn-release-plugin-test.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/maikotrindade/mvn-release-plugin-test.git</developerConnection>
-        <url>https://github.com/maikotrindade/mvn-release-plugin-test.git</url>
+        <url>file://${project.build.directory}/repo-doido</url>
         <tag>HEAD</tag>
     </scm>
 
