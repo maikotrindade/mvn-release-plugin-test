@@ -3,7 +3,7 @@
 
     <groupId>br.trindade</groupId>
     <artifactId>mvn-test</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>mvn-test</name>
