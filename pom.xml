@@ -23,10 +23,15 @@
 
     <distributionManagement>
         <repository>
-            <id>mvn-release-plugin-test</id>
-            <name>Maven Release Plugin Test</name>
-            <url>https://github.com/maikotrindade/mvn-release-plugin-test</url>
-        </repository>  
+            <id>internal.repo</id>
+            <name>Temporary Staging Repository</name>
+            <url>file://${project.build.directory}/mvn-repo</url>
+        </repository>
+        <snapshotRepository>
+            <id>releases</id>
+            <name>Internal Repo</name>
+            <url>file://${project.build.directory}/mvn-repo</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <dependencies>
