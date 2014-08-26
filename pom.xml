@@ -42,7 +42,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5</version>
                 <configuration>
-                    <tagNameFormat>HEAD</tagNameFormat>
+                    <tagNameFormat>@{project.version}</tagNameFormat>
                 </configuration> 
             </plugin>
             <plugin>
