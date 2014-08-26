@@ -3,7 +3,7 @@
 
     <groupId>br.trindade</groupId>
     <artifactId>mvn-test</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
     <packaging>war</packaging>
 
     <name>mvn-test</name>
@@ -18,7 +18,7 @@
         <connection>scm:git:ssh://github.com/maikotrindade/mvn-release-plugin-test.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/maikotrindade/mvn-release-plugin-test.git</developerConnection>
         <url>https://github.com/maikotrindade/mvn-release-plugin-test</url>
-        <tag>HEAD</tag>
+        <tag>mvn-test-1.0.2</tag>
     </scm>
 
     <distributionManagement>
