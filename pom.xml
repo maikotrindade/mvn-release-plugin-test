@@ -19,8 +19,21 @@
         <connection>scm:git:ssh://github.com/maikotrindade/mvn-release-plugin-test.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/maikotrindade/mvn-release-plugin-test.git</developerConnection>
         <url>https://github.com/maikotrindade/mvn-release-plugin-test/</url>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
+
+<!--    <distributionManagement>
+        <repository>
+            <id>internal.repo</id>
+            <name>Temporary Staging Repository</name>
+            <url>file://${project.build.directory}/mvn-repo</url>
+        </repository>
+        <site>
+            <id>mvn-release-plugin-test.home</id>
+            <name>mvn-release-plugin-test</name>
+            <url>https://github.com/maikotrindade/mvn-release-plugin-test/</url>
+        </site>
+    </distributionManagement>-->
 
     <dependencies>
         <dependency>
@@ -43,6 +56,7 @@
                 <version>2.5</version>
                 <configuration>
                     <tagNameFormat>@{project.version}</tagNameFormat>
+                    <goals>install</goals> 
                 </configuration> 
             </plugin>
             <plugin>
